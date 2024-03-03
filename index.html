@@ -25,13 +25,15 @@
     </style>
   </head>
   <body>
-    <header class="container mx-auto">
+    <header class="container mx-auto mt-14">
       <div class="navbar bg-base-100">
-        <div class="flex-1">
-          <a class="text-xl"> Vintage <span>Vibes</span> </a>
+        <div class="flex-1 cursor-pointer">
+          <a class="text-xl lg:text-4xl font-extrabold text-[#023e8a]"
+            >Vintage<span class="text-[#12132D]">Vibes</span>
+          </a>
         </div>
-        <div class="flex-none">
-          <div class="dropdown dropdown-end">
+        <div class="flex-none gap-5">
+          <div class="dropdown dropdown-end hidden lg:block">
             <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
               <div class="indicator">
                 <img src="./assets/icons/flag.svg" alt="flag" />
@@ -40,36 +42,65 @@
             </div>
             <div
               tabindex="0"
-              class="mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow"
+              class="mt-3 z-[1] card card-compact dropdown-content w-20 bg-base-100 shadow"
             >
               <div class="card-body">
-                <span class="font-bold text-lg">8 Items</span>
-                <span class="text-info">Subtotal: $999</span>
-                <div class="card-actions">
-                  <button class="btn btn-primary btn-block">View cart</button>
-                </div>
+                <span class="font-bold text-lg">Flag</span>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown dropdown-end hidden lg:block">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <div class="indicator">
+                <img src="./assets/icons/home.svg" alt="flag" />
+                <span class="badge badge-sm indicator-item">18</span>
+              </div>
+            </div>
+            <div
+              tabindex="0"
+              class="mt-3 z-[1] card card-compact dropdown-content w-20 bg-base-100 shadow"
+            >
+              <div class="card-body">
+                <span class="font-bold text-lg">Home</span>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown dropdown-end hidden lg:block">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <div class="indicator">
+                <img src="./assets/icons/pen.svg" alt="flag" />
+                <span class="badge badge-sm indicator-item">12</span>
+              </div>
+            </div>
+            <div
+              tabindex="0"
+              class="mt-3 z-[1] card card-compact dropdown-content w-20 bg-base-100 shadow"
+            >
+              <div class="card-body">
+                <span class="font-bold text-lg">Pen</span>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown dropdown-end hidden lg:block">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <div class="indicator">
+                <img src="./assets/icons/contact.svg" alt="flag" />
+                <span class="badge badge-sm indicator-item">0</span>
+              </div>
+            </div>
+            <div
+              tabindex="0"
+              class="mt-3 z-[1] card card-compact dropdown-content w-28 bg-base-100 shadow"
+            >
+              <div class="card-body">
+                <span class="font-bold text-lg">Contact</span>
               </div>
             </div>
           </div>
           <div class="dropdown dropdown-end">
-            <div class="">
-              <button class="btn glass text-white bg-blue-950 border-none">
-                Sign in
-              </button>
-            </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
-            >
-              <li>
-                <a class="justify-between">
-                  Profile
-                  <span class="badge">New</span>
-                </a>
-              </li>
-              <li><a>Settings</a></li>
-              <li><a>Logout</a></li>
-            </ul>
+            <button class="btn glass text-white bg-blue-950 border-none">
+              Sign in
+            </button>
           </div>
         </div>
       </div>
