@@ -165,7 +165,7 @@
       <section class="container mx-auto mt-16">
         <div class="flex flex-col justify-center items-center">
           <h2 class="font-extrabold text-5xl">Let's Discuss</h2>
-          <p class="w-2/4 text-center mt-5">
+          <p  class="w-full lg:w-2/4 text-center mt-5">
             You have the capability to execute unit tests and observe the
             outcomes directly within the application. The incorporated testing
             functionalities facilitate a more efficient process.
@@ -193,7 +193,7 @@
         >
           <div class="basis-3/5">
             <h1
-              class="text-xl lg:text-6xl font-extrabold text-white text-center lg:text-start p-4 lg:p-0 w-11/12 mx-auto lg:mx-0"
+              class="text-2xl lg:text-6xl font-extrabold text-white text-center lg:text-start p-4 lg:p-0 w-11/12 mx-auto lg:mx-0"
             >
               Join our Community
             </h1>
@@ -205,9 +205,11 @@
               vibrant network, you'll gain access to a diverse group of
               individuals who share your passions and interests.
             </p>
-            <button class="btn glass bg-[#023e8a] text-white">
-              Registered Now
-            </button>
+            <div class="text-center lg:text-start">
+              <button class="btn glass bg-[#023e8a] text-white  mb-8 lg:mb-0 ">
+                Registered Now
+              </button>
+            </div>
           </div>
           <div class="basis-2/5">
             <img src="./assets/images/joinforum.png" alt="" />
@@ -217,18 +219,40 @@
       <section class="container mx-auto mt-16">
         <div class="flex flex-col justify-center items-center">
           <h2 class="font-extrabold text-5xl">Latest Post</h2>
-          <p class="w-2/4 text-center mt-5">
+          <p class="w-full lg:w-2/4 text-center mt-5">
             Engage in insightful discussions, exchange valuable knowledge, and
             forge meaningful connections that can propel you forward in your
             journey. Together, we can create a supportive environment where
             ideas flourish, skills are honed, and dreams are realized.
           </p>
         </div>
-        <div id="latest-post" class="flex gap-5 justify-center mt-8">
+        <div id="latest-post" class="flex gap-5 justify-center mt-8 flex-col lg:flex-row">
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer footer-center p-10 bg-[#F3F3F5] mt-12 lg:mt-32">
+      <aside>
+        <div class=" cursor-pointer mt-10 lg:mt-28">
+          <a class=" text-xl lg:text-4xl font-extrabold text-[#023e8a] "
+            >Vintage<span class="text-[#12132D]">Vibes</span>
+          </a>
+        </div>
+        <p class="font-bold w-4/5 mx-auto">
+          Join us today and embark on a journey of discovery, learning, and camaraderie. Together, we can achieve great things and make a positive impact in our shared pursuits.
+        </p> 
+        
+      </aside> 
+      <nav>
+        <div class="grid grid-flow-col gap-4">
+         <img src="./assets/icons/in.svg" alt="">
+         <img src="./assets/icons/insta.svg" alt="">
+         <img src="./assets/icons/git.svg" alt="">
+         <img src="./assets/icons/whatsapp.svg" alt="">
+        </div>
+      </nav>
+      <p class="border-t-2 border-dashed w-3/4 mx-auto border-[#12132D40] mt-2"></p>
+      <p>Copyright © 2024 - All right reserved</p>
+    </footer>
     <!-- script -->
     <script src="./app.js"></script>
   </body>

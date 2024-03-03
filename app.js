@@ -24,7 +24,7 @@ const displayPost = (reviews) => {
                 <div class="flex">
                   <div class="basis-1/5">
                     <div class="avatar online">
-                      <div class="w-24 rounded-full">
+                      <div class="w-24 rounded-2xl">
                         <img
                           src="${review.image}"
                         />
@@ -101,13 +101,13 @@ const latestPost = async () => {
               <img src="./assets/icons/calendar.svg" alt="calendar" />
               <p>${profile.author.posted_date}</p>
             </div>
-            <h2 class="pl-10 w-3/4 mt-4 font-extrabold">
+            <h2 class="pl-4 lg:pl-10 w-full lg:w-3/4 mt-4 font-extrabold">
              ${profile.title}
             </h2>
-            <p class="pl-10 w-11/12 mt-4">
+            <p class=" lg:pl-10 w-11/12 mt-4 mx-auto lg:mx-0">
               ${profile.description}
             </p>
-            <div class="pl-10 flex gap-4 mt-4">
+            <div class="pl-10 flex gap-4 mt-8 lg:mt-4">
               <div class="avatar">
                 <div
                   class="w-12 rounded-full"
@@ -117,7 +117,7 @@ const latestPost = async () => {
                   />
                 </div>
               </div>
-              <div>
+              <div >
                 <h2 class="font-extrabold">${profile.author.name}</h2>
                 <h4>${profile.author.designation}</h4>
               </div>
