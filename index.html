@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
-    <script src="./app.js" defer></script>
+    
     <title>VintageVibes</title>
     <style>
       * {
@@ -108,7 +108,7 @@
     <main class="container mx-auto w-11/12 lg:w-full">
       <section class="bg-[#12132D] rounded-3xl mt-12">
         <div
-          class="flex justify-between items-center p-10 lg:p-36 flex-col lg:flex-row"
+          class="flex justify-between items-center p-10 lg:p-36 flex-col lg:flex-row bg-[url('../assets/images/bgbanner.png')] bg-no-repeat bg-bottom bg-cover"
         >
           <div class="basis-4/5">
             <h1
@@ -162,7 +162,35 @@
           </div>
         </div>
       </section>
+      <section class="container mx-auto mt-16">
+        <div class="flex flex-col justify-center items-center">
+          <h2 class="font-extrabold text-5xl">Let's Discuss</h2>
+          <p class="w-2/4 text-center mt-5">
+            You have the capability to execute unit tests and observe the
+            outcomes directly within the application. The incorporated testing
+            functionalities facilitate a more efficient process.
+          </p>
+        </div>
+        <div class="flex gap-4 justify-between">
+          <div class="w-3/5 " id="information-card">
+          </div>
+
+          <div class="w-2/5">
+            <div class="card bg-primary text-primary-content">
+              <div class="card-body">
+                <h2 class="card-title">Card title!</h2>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                  <button class="btn">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
+    <!-- script -->
+    <script src="./app.js"></script>
   </body>
 </html>
