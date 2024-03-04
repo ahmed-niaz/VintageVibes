@@ -22,6 +22,7 @@
         font-family: "Mulish", sans-serif;
         font-optical-sizing: auto;
       }
+
     </style>
   </head>
   <body>
@@ -165,22 +166,23 @@
       <section class="container mx-auto mt-16">
         <div class="flex flex-col justify-center items-center">
           <h2 class="font-extrabold text-5xl">Let's Discuss</h2>
-          <p  class="w-full lg:w-2/4 text-center mt-5">
+          <p class="w-full lg:w-2/4 text-center mt-5">
             You have the capability to execute unit tests and observe the
             outcomes directly within the application. The incorporated testing
             functionalities facilitate a more efficient process.
           </p>
         </div>
-        <div class="flex gap-4 justify-between">
-          <div class="w-3/5" id="information-card"></div>
+        <div class="flex gap-4 justify-between mt-6 flex-col lg:flex-row">
+          <div class="w-full lg:w-3/5" id="information-card"></div>
 
-          <div class="w-2/5">
-            <div class="card bg-primary text-primary-content">
+          <div class="w-full lg:w-2/5">
+            <div class="card bg-[#12132D0D] text-black">
               <div class="card-body">
-                <h2 class="card-title">Card title!</h2>
-                <p>If a dog chews shoes whose shoes does he choose?</p>
-                <div class="card-actions justify-end">
-                  <button class="btn">Buy Now</button>
+                <div class="flex justify-between">
+                  <h2 class="font-bold">Title</h2>
+                  <h4 class="font-bold">Mark as read [0]</h4>
+                </div>
+                <div id="mark-as-read">
                 </div>
               </div>
             </div>
@@ -206,7 +208,7 @@
               individuals who share your passions and interests.
             </p>
             <div class="text-center lg:text-start">
-              <button class="btn glass bg-[#023e8a] text-white  mb-8 lg:mb-0 ">
+              <button class="btn glass bg-[#023e8a] text-white mb-8 lg:mb-0">
                 Registered Now
               </button>
             </div>
@@ -226,31 +228,36 @@
             ideas flourish, skills are honed, and dreams are realized.
           </p>
         </div>
-        <div id="latest-post" class="flex gap-5 justify-center mt-8 flex-col lg:flex-row">
-        </div>
+        <div
+          id="latest-post"
+          class="flex gap-5 justify-center mt-8 flex-col lg:flex-row"
+        ></div>
       </section>
     </main>
     <footer class="footer footer-center p-10 bg-[#F3F3F5] mt-12 lg:mt-32">
       <aside>
-        <div class=" cursor-pointer mt-10 lg:mt-28">
-          <a class=" text-xl lg:text-4xl font-extrabold text-[#023e8a] "
+        <div class="cursor-pointer mt-10 lg:mt-28">
+          <a class="text-xl lg:text-4xl font-extrabold text-[#023e8a]"
             >Vintage<span class="text-[#12132D]">Vibes</span>
           </a>
         </div>
         <p class="font-bold w-4/5 mx-auto">
-          Join us today and embark on a journey of discovery, learning, and camaraderie. Together, we can achieve great things and make a positive impact in our shared pursuits.
-        </p> 
-        
-      </aside> 
+          Join us today and embark on a journey of discovery, learning, and
+          camaraderie. Together, we can achieve great things and make a positive
+          impact in our shared pursuits.
+        </p>
+      </aside>
       <nav>
         <div class="grid grid-flow-col gap-4">
-         <img src="./assets/icons/in.svg" alt="">
-         <img src="./assets/icons/insta.svg" alt="">
-         <img src="./assets/icons/git.svg" alt="">
-         <img src="./assets/icons/whatsapp.svg" alt="">
+          <img src="./assets/icons/in.svg" alt="" />
+          <img src="./assets/icons/insta.svg" alt="" />
+          <img src="./assets/icons/git.svg" alt="" />
+          <img src="./assets/icons/whatsapp.svg" alt="" />
         </div>
       </nav>
-      <p class="border-t-2 border-dashed w-3/4 mx-auto border-[#12132D40] mt-2"></p>
+      <p
+        class="border-t-2 border-dashed w-3/4 mx-auto border-[#12132D40] mt-2"
+      ></p>
       <p>Copyright © 2024 - All right reserved</p>
     </footer>
     <!-- script -->
